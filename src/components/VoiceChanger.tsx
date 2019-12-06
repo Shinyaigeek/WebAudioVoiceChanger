@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from "react";
+import { setMediaRecorder } from "../script/setMediaRecorder";
 
 export default function VoiceChanger() {
-    useEffect(() => {
-        const promise = navigator.mediaDevices.getUserMedia({
-            audio: true,
-            video: true
-        })
-    },[])
-    return (
-        <div>
-            Hello
-        </div>
-    )
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setMediaRecorder().then(console.log)
+  }, []);
+  return <div>{isLoading ? <div>isLoading</div> : <div>loaded</div>}</div>;
 }
