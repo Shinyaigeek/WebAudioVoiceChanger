@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Shinyaigeek/WebAudioVoiceChanger#readme",
   "dependencies": {
+    "@types/react": "^16.9.15",
+    "@types/react-dom": "^16.9.4",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.1",
     "html-webpack-plugin": "^3.2.0",
