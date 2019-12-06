@@ -1,6 +1,7 @@
 export const setMediaRecorder = async () => {
-    const recorder = navigator.mediaDevices.getUserMedia({
+    const recorder = await navigator.mediaDevices.getUserMedia({
         audio: true,
         video: false
     })
+    return recorder
 }
