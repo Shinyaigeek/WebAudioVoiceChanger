@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-export default function app() {
+export default function VoiceChanger() {
     useEffect(() => {
         const promise = navigator.mediaDevices.getUserMedia({
             audio: true,
