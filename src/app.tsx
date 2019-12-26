@@ -1,11 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import App from "./components/App"
+import VoiceChanger from "./components/VoiceChanger"
 
 const target = document.getElementById('app')
 
 ReactDOM.render(
-    <App />
+    <VoiceChanger />
     ,target
 )
